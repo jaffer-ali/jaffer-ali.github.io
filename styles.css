@@ -4,6 +4,7 @@
 
 * {
   padding: 0;
+  /* margin-right: 10px; */
   margin: 0;
   border: 0;
   outline: 0;
@@ -61,11 +62,12 @@ h2,
 h3,
 h4 {
   line-height: 1.2;
+  text-align: right;
   color: var(--clr-fg-alt);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -226,10 +228,26 @@ main {
   margin: 0 auto;
 }
 
+#frontmatter {
+  width:150%;
+  filter: brightness(1.125);
+  height:auto;
+}
+
 .section {
   margin-top: 5em;
 }
 
+#leftbox {
+  width: 65%;
+  float:left;
+  margin-right: 30px;
+}
+
+#rightbox {
+  width:25%;
+  float:left;
+}
 .section__title {
   text-align: center;
   margin-bottom: 1em;
@@ -252,6 +270,7 @@ main {
 
 .about {
   flex-direction: column;
+  display: inline-block;
   margin-top: 3em;
 }
 
@@ -264,13 +283,15 @@ main {
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 600px;
 }
 
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  text-align: right;
+  float: right;
 }
 
 .about .link--icon {
